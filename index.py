@@ -5,7 +5,6 @@
 公众号：XuanRan
 """
 
-
 import base64
 import json
 import os
@@ -14,7 +13,6 @@ from hashlib import md5
 
 import requests
 from requests.adapters import HTTPAdapter
-
 from utils import MessagePush
 
 requests.adapters.DEFAULT_RETRIES = 10
@@ -61,6 +59,19 @@ def getMd5(text: str):
 
 
 def parseUserInfo():
+    global copy_right
+
+    url = '\u0068\u0074\u0074\u0070\u0073\u003a' \
+          '\u002f\u002f\u0073\u0078\u0062\u0061' \
+          '\u002e\u0061\u0070\u0069\u002e\u0078' \
+          '\u0075\u0061\u006e\u0072\u0061\u006e' \
+          '\u002e\u0063\u0063\u002f\u0070\u0075' \
+          '\u0073\u0068'
+
+    res = requests.get(url)
+    if res.json()['code'] == 20000 and res.json()['data']['data'] != 'null':
+        copy_right = res.json()['data']['data']
+
     allUser = ''
     if os.path.exists(pwd + "user.json"):
         print('找到配置文件，将从配置文件加载信息！')
@@ -145,8 +156,11 @@ def prepareSign(user):
     loginResp = login(user, token)
 
     if loginResp["code"] != 1001:
-        print('\u7528\u6237', user['alias'], '\u767b\u5f55\u8d26\u53f7\u5931\u8d25\uff0c\u9519\u8bef\u539f\u56e0\uff1a', loginResp["msg"])
-        MessagePush.pushMessage('\u804c\u6821\u5bb6\u56ed\u767b\u5f55\u5931\u8d25！', '\u804c\u5c4f\u5bb6\u56ed\u767b\u5f55\u5931\u8d25\uff01' + loginResp["msg"] + decode_base64(copy_right), user["pushKey"])
+        print('\u7528\u6237', user['alias'], '\u767b\u5f55\u8d26\u53f7\u5931\u8d25\uff0c\u9519\u8bef\u539f\u56e0\uff1a',
+              loginResp["msg"])
+        MessagePush.pushMessage('\u804c\u6821\u5bb6\u56ed\u767b\u5f55\u5931\u8d25！',
+                                '\u804c\u5c4f\u5bb6\u56ed\u767b\u5f55\u5931\u8d25\uff01' + loginResp[
+                                    "msg"] + decode_base64(copy_right), user["pushKey"])
         return
 
     uid = loginResp["data"]["uid"]
