@@ -1,0 +1,14 @@
+[
+  {
+    "enable": true,
+    "alias": "张三",
+    "phone": "18888888888",
+    "password": "123456...",
+    "deviceType": "Xiaomi|Mi 13|13",
+    "deviceId": "设备ID",
+    "address": "打卡地址",
+    "longitude": "位置经度",
+    "latitude": "位置纬度",
+    "pushKey": "推送Key"
+  }
+]

@@ -1,0 +1,27 @@
+name: "Sign"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "57 23 * * *" # 打卡时间
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+
+    - name: Install depend
+      run: |
+        pip install requests
+
+    - name: Start sign
+      env:
+        USERS: ${{ secrets.USERS }}
+      run: |
+        python Main.py
