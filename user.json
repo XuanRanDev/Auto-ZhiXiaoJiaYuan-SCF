@@ -4,6 +4,7 @@
     "alias": "张三",
     "phone": "18888888888",
     "password": "123456...",
+    "randomLocation": false,
     "deviceType": "Xiaomi|Mi 13|13",
     "deviceId": "设备ID",
     "address": "打卡地址",
