@@ -1,15 +1,15 @@
 [
   {
     "enable": true,
-    "alias": "张三",
-    "phone": "18888888888",
-    "password": "123456...",
+    "alias": "郑科",
+    "phone": "13283097751",
+    "password": "13283097751zk",
     "randomLocation": false,
     "deviceType": "Xiaomi|Mi 13|13",
-    "deviceId": "设备ID",
-    "address": "打卡地址",
-    "longitude": "位置经度",
-    "latitude": "位置纬度",
-    "pushKey": "推送Key"
+    "deviceId": "1f4a84cd06b345e49c5e874f913eeca530e1",
+    "address": "山东省青岛市黄岛区东岳东路",
+    "longitude": "120.195628",
+    "latitude": "35.960271",
+    "pushKey": "477d5b1a62a148829038fb43ba66fdca"
   }
 ]
