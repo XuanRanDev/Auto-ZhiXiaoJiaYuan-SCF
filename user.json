@@ -2,14 +2,14 @@
   {
     "enable": true,
     "alias": "张三",
-    "phone": "18888888888",
-    "password": "123456...",
-    "randomLocation": false,
-    "deviceType": "Xiaomi|Mi 13|13",
-    "deviceId": "设备ID",
-    "address": "打卡地址",
-    "longitude": "位置经度",
-    "latitude": "位置纬度",
-    "pushKey": "推送Key"
+    "phone": "17739654052",
+    "password": "sunxin123",
+    "deviceType": "Redmi|munch|14.0.5",
+    "deviceId": "292eced9a08948c4ae4e2cd78930e58edbdf",
+    "randomLocation": true,
+    "address": "东莞市 清溪镇 九乡大高新街103号",
+    "longitude": "114.219963",
+    "latitude": "22.82756",
+    "pushKey": "156637810b7b4920a807a72b717a7aa2"
   }
 ]
