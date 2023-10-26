@@ -16,6 +16,35 @@ Auto-ShiXiBeiAn
 
 
 
+
+
+
+> 版权所有：
+>
+> 微信：XuanRan_Dev
+>
+> 邮箱：XuanRanDev@qq.com
+>
+> 如果此项目侵犯您的合法权益，可通过邮件联系我下架此项目。
+>
+> + https://github.com/XuanRanDev/Auto-ShiXiBeiAn
+> + https://github.com/XuanRanDev/Auto-ZhiXiaoJiaYuan
+> + https://github.com/XuanRanDev/Auto-ZhiXiaoJiaYuan-SCF
+> + https://github.com/XuanRanDev/Auto-GongXueYun
+> + https://github.com/XuanRanDev/Auto-GongXueYun-2
+>
+> 等项目，均采用GPL2.0开源协议开源，目的在于使更多人学习计算机网络和安全，根据GPL2.0协议，开发者不对软件的适用性或功能做出任何保证。
+>
+> 为了整个社区的良性发展，我们强烈建议学习人员做到以下几点：
+>
+> 所有的赞助均为支持开发，供于更多人学习测试与交流，**我们不鼓励、不赞成、不支持任何人，使用任何违规方式完成实习和打卡任务。**
+>
+> 同时，鉴于项目的特殊性，开发者可能在任何时间**停止更新**或**删除项目**。
+
+
+
+
+
 ## 前言
 
 **1、请务必认真阅读此文档后继续！**
